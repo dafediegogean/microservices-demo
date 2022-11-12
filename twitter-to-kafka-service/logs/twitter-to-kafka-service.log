@@ -1,0 +1,128 @@
+2022-11-12 12:05:00 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19 on DESKTOP-AM5A4VP with PID 2532 (D:\TI\Event-Driven Microservices Udemy Course\microservices-demo\twitter-to-kafka-service\target\classes started by rodri in D:\TI\Event-Driven Microservices Udemy Course\microservices-demo)
+2022-11-12 12:05:00 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-12 12:05:01 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.193 seconds (JVM running for 1.971)
+2022-11-12 12:05:01 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - TwitterToKafkaService starts
+2022-11-12 12:05:01 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:05:01 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Welcome message: Hello, microservices!
+2022-11-12 12:05:01 [main] INFO  b.c.r.t.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:05:02 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 12:05:02 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:31)
+Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 0 [character 1 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:521)
+	at org.json.JSONObject.<init>(JSONObject.java:225)
+	at org.json.JSONObject.<init>(JSONObject.java:421)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.getRules(TwitterV2StreamHelper.java:156)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.setupRules(TwitterV2StreamHelper.java:106)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-11-12 12:05:52 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19 on DESKTOP-AM5A4VP with PID 6448 (D:\TI\Event-Driven Microservices Udemy Course\microservices-demo\twitter-to-kafka-service\target\classes started by rodri in D:\TI\Event-Driven Microservices Udemy Course\microservices-demo)
+2022-11-12 12:05:52 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-12 12:05:53 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.13 seconds (JVM running for 2.11)
+2022-11-12 12:05:53 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - TwitterToKafkaService starts
+2022-11-12 12:05:53 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:05:53 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Welcome message: Hello, microservices!
+2022-11-12 12:05:53 [main] INFO  b.c.r.t.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:06:07 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 12:06:07 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:31)
+Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 0 [character 1 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:521)
+	at org.json.JSONObject.<init>(JSONObject.java:225)
+	at org.json.JSONObject.<init>(JSONObject.java:421)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.getRules(TwitterV2StreamHelper.java:156)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.setupRules(TwitterV2StreamHelper.java:106)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-11-12 12:10:58 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19 on DESKTOP-AM5A4VP with PID 14584 (D:\TI\Event-Driven Microservices Udemy Course\microservices-demo\twitter-to-kafka-service\target\classes started by rodri in D:\TI\Event-Driven Microservices Udemy Course\microservices-demo)
+2022-11-12 12:10:58 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-12 12:10:58 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.995 seconds (JVM running for 1.507)
+2022-11-12 12:10:58 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - TwitterToKafkaService starts
+2022-11-12 12:10:58 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:10:58 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Welcome message: Hello, microservices!
+2022-11-12 12:10:58 [main] INFO  b.c.r.t.r.impl.MockKafkaStreamRunner - Started mock filtering for keywords [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:10:58 [pool-1-thread-1] INFO  b.c.r.t.l.TwitterKafkaStatusListener - Twitter status with text ipsum sit dolor amet lorem amet sit amet Spring lorem dolor amet sit amet sit dolor
+2022-11-12 12:11:55 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19 on DESKTOP-AM5A4VP with PID 12924 (D:\TI\Event-Driven Microservices Udemy Course\microservices-demo\twitter-to-kafka-service\target\classes started by rodri in D:\TI\Event-Driven Microservices Udemy Course\microservices-demo)
+2022-11-12 12:11:55 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-12 12:11:55 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.98 seconds (JVM running for 1.48)
+2022-11-12 12:11:55 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - TwitterToKafkaService starts
+2022-11-12 12:11:55 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:11:55 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Welcome message: Hello, microservices!
+2022-11-12 12:11:55 [main] INFO  b.c.r.t.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:11:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 12:11:56 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:31)
+Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 0 [character 1 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:521)
+	at org.json.JSONObject.<init>(JSONObject.java:225)
+	at org.json.JSONObject.<init>(JSONObject.java:421)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.getRules(TwitterV2StreamHelper.java:156)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.setupRules(TwitterV2StreamHelper.java:106)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-11-12 12:15:10 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19 on DESKTOP-AM5A4VP with PID 8036 (D:\TI\Event-Driven Microservices Udemy Course\microservices-demo\twitter-to-kafka-service\target\classes started by rodri in D:\TI\Event-Driven Microservices Udemy Course\microservices-demo)
+2022-11-12 12:15:10 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-12 12:15:10 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.981 seconds (JVM running for 1.52)
+2022-11-12 12:15:10 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - TwitterToKafkaService starts
+2022-11-12 12:15:10 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:15:10 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Welcome message: Hello, microservices!
+2022-11-12 12:15:10 [main] INFO  b.c.r.t.r.impl.MockKafkaStreamRunner - Started mock filtering for keywords [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:15:10 [pool-1-thread-1] INFO  b.c.r.t.l.TwitterKafkaStatusListener - Twitter status with text amet amet sit lorem lorem amet amet Kafka sit lorem lorem amet lorem
+2022-11-12 12:15:19 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19 on DESKTOP-AM5A4VP with PID 16960 (D:\TI\Event-Driven Microservices Udemy Course\microservices-demo\twitter-to-kafka-service\target\classes started by rodri in D:\TI\Event-Driven Microservices Udemy Course\microservices-demo)
+2022-11-12 12:15:19 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-12 12:15:20 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.98 seconds (JVM running for 1.486)
+2022-11-12 12:15:20 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - TwitterToKafkaService starts
+2022-11-12 12:15:20 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:15:20 [main] INFO  b.c.r.t.TwitterToKafkaServiceApplication - Welcome message: Hello, microservices!
+2022-11-12 12:15:20 [main] INFO  b.c.r.t.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Spring, Kafka, Elasticsearch, ]
+2022-11-12 12:15:21 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 12:15:21 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:31)
+Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 0 [character 1 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:521)
+	at org.json.JSONObject.<init>(JSONObject.java:225)
+	at org.json.JSONObject.<init>(JSONObject.java:421)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.getRules(TwitterV2StreamHelper.java:156)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2StreamHelper.setupRules(TwitterV2StreamHelper.java:106)
+	at br.com.rodrigosieja.twitter_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at br.com.rodrigosieja.twitter_to_kafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
