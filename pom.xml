@@ -2,6 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- Faltou adicionar os modules do HueCenter Universal" -->
 	<modules>
 		<module>twitter-to-kafka-service</module>
 	</modules>
@@ -26,6 +28,7 @@
 		<httpclient.version>4.5.13</httpclient.version>
 		<json.version>20220320</json.version>
 		<lombok.version>1.18.24</lombok.version>
+		<hue.version>30201022</hue.version> <!-- Versão da lib descrita por anoMesDia -->
 	</properties>
 
 	<dependencyManagement>
@@ -73,6 +76,16 @@
 				<version>${lombok.version}</version>
 				<scope>provided</scope>
 			</dependency>
+			
+			<!-- Lib Hue All Funcs, todas as funções do pacote do Huenismo Universal -->
+			<dependency>
+				<groupId>org.universal.nakao.hue</groupId>
+				<artifactId>hue-all-fun</artifactId>
+				<version>${hue.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			
+			
 		</dependencies>
 	</dependencyManagement>
 
